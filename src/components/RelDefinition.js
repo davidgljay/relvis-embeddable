@@ -122,7 +122,7 @@ class RelDefinition extends Component {
         </IconButton>
       {
         showProbabilities &&
-        <div>
+        <div style={styles.container}>
           <div style={styles.text}>
             As relationships form, the probability distributions within a system become more stable.
           </div>
@@ -132,8 +132,8 @@ class RelDefinition extends Component {
             nodes={[relModel.nodes[numNodes/4], relModel.nodes[3 * numNodes/4]]} />
           <div style={styles.text}>
             A variable called <a href="https://en.wikipedia.org/wiki/Entropy">entropy</a> measures the randomness of these probability distrubutions.
-            It goes up when many states are equally possible, and goes down when a few states are likely.
-            By observing patterns in how it goes down we can track how nodes in the system become form stable relationships.
+            It goes up when many states are equally possible, and goes down when a few states are likely.<p/>
+            By observing patterns in how entropy goes up and down we can track where relationships in a systems are emerging and degrading.
           </div>
           <EntropyGraph
             width={width}
@@ -159,7 +159,9 @@ const styles = {
     marginTop: 20,
     marginBottom: 10,
     fontSize: 14,
-    textAlign: 'left'
+    textAlign: 'center',
+    color: '#333',
+    fontStyle: 'italic'
   },
   bigNumber: {
     margin: 10,
