@@ -1,7 +1,7 @@
 import RelDefinition from '../components/RelDefinition'
 
-const RelBasic = () => {
-  return <RelDefinition numNodes={20} height={100} width={600}/>;
+const Definition = () => {
+  return <RelDefinition numNodes={10} height={600} width={600} raidus={50}/>;
 };
 
-export default RelBasic;
+export default Definition;

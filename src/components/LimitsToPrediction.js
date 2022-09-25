@@ -127,7 +127,7 @@ class LimitsToPrediction extends Component {
         width={width}
         height={50}
         name1={'Reality'}
-        name2={'Model'} />
+        name2={'Prediction'} />
         <div style={styles.visWrapper}>
           <div style={styles.vis}>
           <RelVisualization
@@ -145,7 +145,7 @@ class LimitsToPrediction extends Component {
             relModel={relModel2}
             bits={bits2}
             getPosition={this.getPosition} />
-            Model
+            Prediction
           </div>
         </div>
         <IconButton aria-label="Restart" onClick={this.restart}>
