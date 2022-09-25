@@ -1,8 +1,8 @@
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RelBasic from "./components/relbasic";
-import Home from "./components/home"
+import RelDefinition from "./pages/reldefinition";
+import Home from "./pages/home"
 import './App.css';
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/relbasic" element={<RelBasic />} />
+        <Route path="/reldefinition" element={<RelDefinition />} />
       </Routes>
     </BrowserRouter>
   );
