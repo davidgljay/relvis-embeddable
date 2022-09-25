@@ -30,8 +30,8 @@ class LimitsToPrediction extends Component {
     this.getPosition = (n) => {
       const {height, width, radius, numNodes} = this.props
       const center = {
-        x: width/2,
-        y: height/2
+        x: width/4,
+        y: (height-90)/2
       }
       return {
         x: Math.sin( 2 * Math.PI * n/numNodes ) * radius + center.x,
@@ -131,8 +131,8 @@ class LimitsToPrediction extends Component {
         <div style={styles.visWrapper}>
           <div style={styles.vis}>
           <RelVisualization
-            width={width}
-            height={height}
+            width={width/2}
+            height={height-90}
             relModel={relModel1}
             bits={bits1}
             getPosition={this.getPosition} />
@@ -140,8 +140,8 @@ class LimitsToPrediction extends Component {
           </div>
           <div style={styles.vis}>
           <RelVisualization
-            width={width}
-            height={height}
+            width={width/2}
+            height={height-90}
             relModel={relModel2}
             bits={bits2}
             getPosition={this.getPosition} />
