@@ -74,8 +74,8 @@ class RelDefinition extends Component {
         clearInterval(this.state.stepTimer)
         clearInterval(this.state.bitTimer)
         clearInterval(this.state.relTimer)
-        const stepTimer = setInterval(runStep, 250)
-        const bitTimer = setInterval(runBits, 20)
+        const stepTimer = setInterval(runStep, 500)
+        const bitTimer = setInterval(runBits, 40)
         const relModel = new RelModel(numNodes)
         relModel.maxEntropy = Math.log1p(1/numNodes) * numNodes * 2
         relModel.minEntropy = Math.log1p(1) * 2

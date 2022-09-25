@@ -93,7 +93,7 @@ export default class RelModel {
       this.bits = this.bits.filter(bit => bit.complete < 100)
       for (var i = 0; i < this.bits.length; i++) {
         const bit = this.bits[i]
-        bit.complete += 2
+        bit.complete += 1
         if (bit.complete === 100) {
           const bitColor = bit.color
           const nodeColor = this.nodes[bit.target].color
