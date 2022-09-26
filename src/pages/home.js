@@ -1,5 +1,5 @@
 const Home = () => {
-  return <div style="padding: 20px">
+  return <div style={padding: 20}>
     <h1>Embeddable Relationality Visualizations</h1>
       <p><a href="./reldefinition">/reldefinition</a></p>
       <p><a href="./limitstoprediction">/limitstoprediction</a></p>
