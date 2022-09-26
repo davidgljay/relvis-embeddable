@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build script
-        run: yarn build
+        run: yarn install && yarn build
