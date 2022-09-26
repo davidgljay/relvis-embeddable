@@ -43,6 +43,7 @@ jobs:
       id-token: write
       contents: read
       packages: write
+      pages: write
     needs: build
     steps:
       - name: Deploy to GitHub Pages
