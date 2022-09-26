@@ -1,5 +1,4 @@
 
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Definition from "./pages/reldefinition";
 import Limits from "./pages/limitstoprediction";
