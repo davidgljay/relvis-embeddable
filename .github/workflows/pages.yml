@@ -37,6 +37,9 @@ jobs:
       name: github-pages
       url:  https://davidgljay.github.io/relvis-embeddable
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     needs: build
     steps:
       - name: Deploy to GitHub Pages
