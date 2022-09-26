@@ -12,10 +12,10 @@ export default function App() {
     <HashRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/reldefinition" element={<Definition />} />
-        <Route path="/limitstoprediction" element={<Limits />} />
-        <Route path="/relgraph" element={<RelGraph />} />
-        <Route path="/relstructure" element={<Structure />} />
+        <Route path="./reldefinition" element={<Definition />} />
+        <Route path="./limitstoprediction" element={<Limits />} />
+        <Route path="./relgraph" element={<RelGraph />} />
+        <Route path="./relstructure" element={<Structure />} />
       </Routes>
     </HashRouter>
   );

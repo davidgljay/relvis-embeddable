@@ -1,12 +1,10 @@
 const Home = () => {
   return <div>
     <h1>Embeddable Relationality Visualizations</h1>
-    <ul>
-      <li><a href="./reldefinition">/reldefinition</a></li>
-      <li><a href="/limitstoprediction"></a></li>
-      <li><a href="/relgraph"></a></li>
-      <li><a href="/relstructure" ></a></li>
-    </ul>
+      <p><a href="./reldefinition">/reldefinition</a></p>
+      <p><a href="/pmitstoprediction">/limitstoprediction</a></p>
+      <p><a href="/relgraph"></a>relgraph</p>
+      <p><a href="/relstructure" >relstructure</a></p>
   </div>;
 };
 
