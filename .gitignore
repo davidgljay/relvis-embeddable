@@ -8,6 +8,7 @@
 # production
 /docs
 /._site
+/build
 
 # testing
 /coverage
