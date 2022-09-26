@@ -8,15 +8,23 @@ import Home from "./pages/home";
 import './App.css';
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/reldefinition" element={<Definition/>} />
-        <Route path="/limitstoprediction" element={<Limits/>} />
-        <Route path="/relgraph" element={<RelGraph/>} />
-        <Route path="/relstructure" element={<Structure/>} />
-      </Routes>
-    </BrowserRouter>
-  );
+  let queryParams = new URLSearchParams(window.location.search);
+  var vis = queryParams.get('vis')
+  let component
+  switch(vis) {
+    case "reldefinition":
+      return (<Definition/>);
+      break;
+    case "relgraph":
+      return (<RelGraph/>);
+      break;
+    case "limitstoprediction":
+      return (<Limits/>);
+      break;
+    case "relstructure":
+      return (<Structure/>);
+      break;
+    default:
+      return (<Home/>);
+  }
 }
