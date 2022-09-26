@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Definition from "./pages/reldefinition";
 import Limits from "./pages/limitstoprediction";
 import RelGraph from "./pages/relgraph";
@@ -9,7 +9,7 @@ import './App.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/reldefinition" element={<Definition />} />
@@ -17,6 +17,6 @@ export default function App() {
         <Route path="/relgraph" element={<RelGraph />} />
         <Route path="/relstructure" element={<Structure />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
